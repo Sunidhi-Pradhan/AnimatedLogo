@@ -7,5 +7,39 @@ body{
     background: #000;
 }
 .netflix{
-    
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background: #fff; */
 }
+.netflix span{
+    width: 50px;
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    background: #db0001;
+    position: absolute;
+}
+.left{
+    left: 0;
+    bottom: 0;
+    /* transform: rotate(10deg); */
+    /* animation: left 1s linear infinite; */
+}
+.center{
+    left: 0;
+    bottom: 0;
+    transform: skewX(22deg);
+    transform-origin: top right;
+    box-shadow: 0 0 50px #000;
+    z-index: 2;
+}
+.right{
+    right: 0;
+    bottom: 0;
+    /* transform: rotate(-10deg); */
+    /* animation: right 1s linear infinite; */
+}
+
